@@ -1,0 +1,20 @@
+~~~~~~~~EXERCÍCIO 05
+
+   Fazer um programa para ler o valor "r" do raio de um círculo, e depois
+  mostrar o valor da área do círculo com três casas decimais. A fórmula da
+  área do círculo é a seguinte: área = π.r2. O valor de π corresponde a 3.14159.
+    Exemplo:
+      Digite o valor do raio do círculo: 2.0
+      ÁREA = 12.566
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Depois de alguns minutos, eu percebi que a soma desse exemplo seria "4 * 3.14159".
+    Sabendo disso, o que eu pensei que seria um exercício extremamente difícil é na
+    verdade resolvido com duas somas básicas:
+
+    (raio * raio) * 3.14159
+
+  //Provavelmente o meu primeiro erro porque isso foi simples demais pra ser verdade...

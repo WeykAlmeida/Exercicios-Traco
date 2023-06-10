@@ -1,0 +1,27 @@
+~~~~~~~~EXERCÍCIO 03
+
+   Fazer um programa para ler o nome e idade de duas pessoas. Ao final
+  mostrar uma mensagem com os nomes e a idade média entre essas
+  pessoas, com uma casa decimal, conforme exemplo.
+    Exemplo:
+      Nome1: Maria Silva
+      Idade1: 19
+      Nome2: Joao Melo
+      Idade2: 20
+      A idade média de Maria Silva e Joao Melo é de 19.5 anos
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Eu acho que eu vou precisar de 3 variáveis: uma pra cada nome e uma
+    pra fazer a média das idades. 
+     
+  Talvez algo parecido com:
+
+    alert(`A idade média de ${Nome1.value} e ${Nome2.value} é ${Media.value} anos.`)
+
+  Eu acredito que a função em si seria algo como: const Media = Idade1 + Idade2 / 2
+
+  //Pós-exercício: Não era exatamente isso, eu tive que tirar os ".values" e colocar parenteses entre 
+  Idade1 e Idade2, mas fora isso o código funciona.

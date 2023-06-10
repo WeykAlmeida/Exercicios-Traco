@@ -1,0 +1,31 @@
+~~~~~~~~EXERCÍCIO 04
+
+   Fazer um programa para calcular o troco no processo de pagamento de
+  um produto de uma mercearia. O programa deve ler o preço unitário do
+  produto, a quantidade de unidades compradas deste produto, e o valor em
+  dinheiro dado pelo cliente (suponha que haja dinheiro suficiente). Seu
+  programa deve mostrar o valor do troco a ser devolvido ao cliente.
+    Exemplo:
+      Preço unitário do produto: 8.00
+      Quantidade comprada: 2
+      Dinheiro recebido: 20.00
+      TROCO = 4.00
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   A primeira coisa que eu notei é que eu vou precisar de um IF statement;
+    Se o dinheiro recebido pelo cliente for maior que a soma de sua compra,
+    ele recebe o troco de acordo com a quantidade extra que ele deu.
+    Se ele der menos, ele receberia um alerta assim:
+    alert(`Pagamento insuficiente! Faltam ${troco} reais para realizar compra.`)
+
+   Pra exibir esse "{troco}" eu teria que primeiro saber do valor total da compra e 
+    comparar com o pagamento recebido pelo cliente. Tal conta seria um simples:
+    const troco = pagamento - preco * quantidade
+
+   Em adição, eu também poderia considerar caso o cliente desse o exato valor da compra
+  com um "Obrigado e volte sempre!".
+  
+  //Outra adição que eu fiz ao código foi o ${Math.abs(troco)} pra melhor visualização.

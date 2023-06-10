@@ -1,0 +1,42 @@
+~~~~~~~~EXERCÍCIO 10
+
+   Fazer um programa para ler três números inteiros. Em seguida, mostrar
+  qual o menor dentre os três números lidos. Em caso de empate, mostrar
+  apenas uma vez.
+    Exemplo:
+      Primeiro valor: 7
+      Segundo valor: 3
+      Terceiro valor: 8
+      MENOR = 3
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Eu poderia fazer vários if statements comparando cada número individualmente,
+    mas isso tornaria o código muito grande e complicado então deve ter uma solução
+    melhor.
+
+   Bem, o menor número é sempre o mais próximo de 0 (ou mais distante, no caso de
+    números negativos). Tendo isto em mente, eu só preciso de um objeto que
+    compare qual valor contém o número mais próximo de 0. Quanto ao problema de
+    repetição, eu só preciso me certificar de usar o comando "Set" assim como eu fiz
+    com as placas de veículos no módulo 3.
+
+   //Depois de alguns minutos de pesquisa, eu descobri o comando "Math.min" e tentei
+   fazer isso: 
+
+   const comparacao = {
+        if (valor1 !== valor2 && valor1 !== valor3 && valor2 !== valor3) {
+            return Math.min(valor1, valor2, valor3)
+        }
+   }
+
+    Não deu certo, os valores estavam fora da const comparacao e eu aprendi sobre a
+   função que o "let" pode ter: a de chamar arrays externos. Com isso, eu os trouxe
+   pra dentro da comparacao e criei um novo let que os represente (valores). Então eu criei
+   outro let com o comando Set para filtrar replicatas. Isso também não funcionou (o "Menor:"
+   só mostrava NaN). Então depois de mais pesquisa eu achei esse "spread operator" que me
+   ajudou a finalizar o exercício. Depois disso, eu também percebi que o "if" era desnecessário
+   então eu o removi. Por ter alguns códigos que eu não conhecia antes, este acabou sendo o
+   exercício mais desafiador até o momento.

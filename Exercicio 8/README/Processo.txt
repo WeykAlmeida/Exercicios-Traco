@@ -1,0 +1,22 @@
+~~~~~~~~EXERCÍCIO 08
+
+   Fazer um programa para ler três medidas A, B e C. Em seguida, calcular e
+  mostrar (imprimir os dados com quatro casas decimais):
+  a) a área do quadrado que tem lado A
+  b) a área do triângulo retângulo que base A e altura B
+  c) a área do trapézio que tem bases A e B, e altura C
+    Exemplo:
+      Digite a medida A: 4.0
+      Digite a medida B: 3.5
+      Digite a medida C: 5.2
+      ÁREA DO QUADRADO = 16.0000
+      ÁREA DO TRIÂNGULO = 7.0000
+      ÁREA DO TRAPÉZIO = 19.5000
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   O exercício se resume a três medidas diferentes usando os mesmos valores.
+    Tudo o que eu preciso fazer é converter as fórmulas aritiméticas de um 
+    jeito que elas funcionem na programação (ex: triângulo = (valorA * valorB) / 2).

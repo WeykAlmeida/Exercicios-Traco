@@ -1,0 +1,36 @@
+~~~~~~~~EXERCÍCIO 09
+
+   Fazer um programa para ler uma duração de tempo em segundos, daí
+  imprimir na tela esta duração no formato horas:minutos:segundos.
+    Exemplos:
+      Digite a duração em segundos: 12506
+      3:28:26
+      Digite a duração em segundos: 300
+      0:5:0
+      Digite a duração em segundos: 140811
+      39:6:51
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Os segundos são convertidos em 3 propriedades diferentes, cada uma com a
+    própria fórmula.
+
+   E como dessa vez,
+    o valor digitado pelo usuário seria só um, eu vou tentar ser mais organizado e
+    criar um objeto que armazena o tempo em horas, minutos e segundos como propriedades.
+    Dentro desse objeto, eu só preciso transcrever a fórmula de conversão e inserir o
+    resultado em um input pro cliente ver.
+
+   Se isso não der certo, eu chamo o valor em segundos do elemento com o "getElementById".
+
+  //Dificuldades: Inicialmente, eu tinha usado o "toFixed" 
+    Ex: minutos: +((tempoSegundos / 60) % 60).toFixed(0)
+    
+   E o código funcionava consideravelmente bem, com a exceção de mostrar o número
+    errado em certas situações (como exibir minutos 7 no lugar de minutos 6 como no
+    terceiro exemplo). Depois de algum tempo de pesquisa eu achei esse "Math.floor",
+    que mostra resultados mais apropriados pra esse exercício que o toFixed. Eu acredito
+    que alguns dos meus códigos anteriores também funcionem melhor com o Math.floor, mas
+    pensando na legitimidade de minhas respostas, eu vou deixar como estão.

@@ -1,0 +1,27 @@
+~~~~~~~~EXERCÍCIO 15
+
+   Fazer um programa para ler a quantidade de glicose no sangue de uma
+    pessoa e depois mostrar na tela a classificação desta glicose de acordo
+    com a tabela de referência abaixo:
+   Classificação Glicose
+    Normal -> Até 100 mg/dl
+    Elevado -> Entre 100 e 140 mg/dl
+    Diabetes -> Maior que 140 mg/dl
+        Exemplo:
+            Digite a medida da glicose: 129.0
+            Classificação: Elevado
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Isso não parece ser muito diferente do que eu já fiz antes: a leitura de uma
+    propriedade e classificação em 3 categorias. A mais notável diferença sendo
+    que agora existe um "número do meio", mas esse número não seria um problema
+    já que é só eu colocar os números de acordo.
+
+   A primeira (e única) coisa que me vêm à mente é fazer 3 IF statements
+    (um pra cada mg/dl diferente) e adicionar a leitura com o `Texto`.
+    de acordo. Ex:
+
+   if (medidaGlicose > 100 && medidaGlicose <= 140) {`Elevado`}

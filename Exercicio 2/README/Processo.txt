@@ -1,0 +1,24 @@
+~~~~~~~~EXERCÍCIO 02
+
+   Fazer um programa para ler as medidas da base e altura de um retângulo.
+  Em seguida, mostrar o valor da área, perímetro e diagonal deste retângulo,
+  com quatro casas decimais, conforme exemplo.
+    Exemplo:
+      Base do retângulo: 4.0
+      Altura do retângulo: 5.0
+      ÁREA = 20.0000
+      PERÍMETRO = 18.0000
+      DIAGONAL = 6.4031
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   O exercício envolve 3 grandes cálculos:
+     
+    1- A área é multiplicação básica dos dados.
+    2- O perímetro é algo como (x+x) + (y+y).
+    3- .......... Teorema de Pitágoras(?)
+
+   Eu sei que eu consigo fazer 2 cálculos dentro da mesma função, mas
+    interpretar o teorema de pitágoras em javascript será um desafio novo.

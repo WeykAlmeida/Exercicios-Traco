@@ -1,0 +1,31 @@
+~~~~~~~~EXERCÍCIO 01
+
+   Fazer um programa para ler as medidas da largura e comprimento de um
+  terreno retangular com uma casa decimal, bem como o valor do metro
+  quadrado do terreno com duas casas decimais. Em seguida, o programa
+  deve mostrar o valor da área do terreno, bem como o valor do preço do
+  terreno, ambos com duas casas decimais, conforme exemplo.
+    Exemplo:
+      Largura do terreno: 10.0
+      Comprimento do terreno: 30.0
+      Valor do metro quadrado: 200.00
+      Área do terreno = 300.00
+      Preço do terreno = 60000.00
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Eu vou precisar de dois cálculos centrais: 
+    1- Largura + comprimento = Área 
+    2- Área + Valor do metro quadrado = Preço total.
+      Para isso, eu vou precisar de 1 função com 3 etapas: uma pra ler os dados inseridos,
+      uma pra calcular estes dados e uma para inserí-los nos inputs de resultado.
+      Como as duas somas são de multiplicação simples, eu posso usar lógicas similares para ambas.
+         
+             
+   A apresentação para o cliente será de 1 botão e 5 "inputs", 3 em cima dos botões e 2 em baixo.
+    -3 inputs serão preenchidos pelo cliente.
+    -2 serão automaticamente preenchidos no momento em que
+    o cliente inserir os dados e clicar no botão.
+    -O botão "Inserir" preencherá os 2 outros inputs.

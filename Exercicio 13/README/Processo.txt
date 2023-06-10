@@ -1,0 +1,69 @@
+~~~~~~~~EXERCÍCIO 13
+
+   Uma operadora de telefonia cobra R$ 50.00 por um plano básico que dá
+  direito a 100 minutos de telefone. Cada minuto que exceder a franquia de
+  100 minutos custa R$ 2.00. Fazer um programa para ler a quantidade de
+  minutos que uma pessoa consumiu, daí mostrar o valor a ser pago.
+    Exemplos:
+      Digite a quantidade de minutos: 22
+      Valor a pagar: R$ 50.00
+      Digite a quantidade de minutos: 103
+      Valor a pagar: R$ 56.00
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Levando em consideração que o preço é fixo e que o cliente teoricamente
+    não tem um limite máximo de minutos que ele tem direito, eu só precisaria
+    fazer um IF/ELSE para duas possibilidades (Minutos < ou > 100), a segunda
+    tendo o acréscimo "infinito" de 2 reais. 
+    
+    
+   //Dito isto, eu não pude achar um jeito de fazer a conta funcionar...
+   Inicialmente, eu tinha idealizado fazer um "for" (a lógica sendo "pra cada
+   número acima de 100, é só eu adicionar a i 2! Fácil, né?"), mas eu não consegui
+   encaixar o valor desejado nele por não entender bem o suficiente do código.
+
+   Eu eventualmente achei a conta "(X - 100) * 2", mas ainda assim eu não consegui
+    resolver.
+
+    Após mais algumas horas tentando sem sucesso aplicar o código, eu achei o
+   "+=" (que eu já tinha aprendido sobre, inclusive, mas esqueci...), o meu código
+   tava me dando o valor errado por causa de erro de símbolo. Do jeito que eu tava
+   fazendo, o código entendia que o valor era o resultado da soma, e não que era pra
+   este valor ser adicionado à mesma.
+   O correto seria o código: "Valor += (Minutos - 100) * 2". Deste modo, o valor
+   original de 50 é mantido e meramente ganha o resultado da soma
+   (ex: Valor += 105 - 100 * 2 seria 5*2 = +10).
+
+
+
+   Nesse exercício, quase nenhuma das minhas ideias funcionaram e eu dependi demais
+   da internet pra passar, e por isso eu acredito ser correto eu ao menos explicar
+   o que eu fiz em mais detalhes (explicando linha por linha):
+
+   const Minutos = parseFloat(document.getElementById("Minutos").value);
+   var Valor = 50.00;
+
+  Aqui eu estou meramente criando as propriedades que serão utilizadas dentro do código.
+  Eu preciso do parseFloat pra transformar os arrays em números e poder usá-los como
+  tal. E diferente do Minutos, eu tive que criar o "Valor" como var por esta se tratar de
+  uma propriedade não presente na html fonte (já que o número não é visível na página), uma
+  const é imutável e exibiria sempre 50 no "Valor a pagar".
+
+
+   if (Minutos > 100) {
+        Valor += (Minutos - 100) * 2;
+   }
+
+  Antes eu achava que eu precisaria de um IF/ELSE, mas eu não consegui fazer o else (Minutos < 100)
+  funcionar. E por isso eu só fiz um IF: caso os números passem de 100, eu adiciono (+=) ao Valor
+  o resultado da soma, que multiplica o resultado de X (minuto acima de 100) - 100 por 2 e o adiciona
+  ao valor de 50. 
+
+
+    document.getElementById("Valor").value= `R$ ${Valor.toFixed(2)}`;
+
+  Essa é a última linha do código, servindo o simples papel de adicionar ao "Valor" da html o "Valor"
+  calculado da função com o texto em `` e o "toFixed(2)" (para adicionar duas casas decimais).
