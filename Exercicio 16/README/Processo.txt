@@ -1,0 +1,28 @@
+~~~~~~~~EXERCÍCIO 16
+
+   No arremesso de dardo, o atleta tem três chances para lançar o dardo à
+    maior distância que conseguir. Você deve criar um programa para, dadas
+    as medidas das três tentativas de lançamento, informar qual foi a maior.
+        Exemplo:
+            Digite as três distâncias:
+            83.21
+            79.53
+            89.15
+            MAIOR DISTÂNCIA = 89.15
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   A primeira coisa que eu notei é que a única diferença deste para o décimo
+    exercício é que ao invés de eu procurar o menor número, aqui eu procuro o 
+    maior. Então a minha intuição me leva a acreditar que o código seria algo
+    como "Math.max". 
+
+    Dito isto, outro aspecto do código que eu notei foi a carência de labels, é
+     só uma pras 3. Mas a única coisa em que isso muda no código deveria ser que,
+     aqui, eu coloco 3 inputs com o id próprio dentro de uma única label.
+
+   //Visando praticidade como prioridade, eu só copiei e colei o exercício 10 e
+   modifiquei os nomes das propriedades para que o código funcione no exercício 16.
+   E funcionou. c:

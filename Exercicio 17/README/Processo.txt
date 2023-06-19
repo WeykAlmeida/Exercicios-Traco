@@ -1,0 +1,22 @@
+~~~~~~~~EXERCÍCIO 17
+
+   Fazer um programa para ler dois números inteiros, e dizer se um número é
+  múltiplo do outro. Os números podem ser digitados em qualquer ordem.
+    Exemplo:
+      Digite dois números inteiros:
+      6
+      24
+      São múltiplos.
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   "if (number1 == Math.sqrt.number2 || number2 == Math.sqrt.number1) { São múltiplos }"
+   seria a solução que meu cérebro me enviou. Pelo meu conhecimento, o sqrt é "square root",
+   que seria a raiz quadrada.
+
+   //Eu claramente estive errado uma vez que raiz quadrada é um número fixo e no próprio
+   exemplo você já vê que a "raíz quadrada" de 6 não é 36, mas sim 24. Então o que eu deveria
+   fazer é na verdade dividir um valor pelo outro. Visto que um número dividido por um número
+   que é multiplicado por ele (ex: 7 % 42 = 0)

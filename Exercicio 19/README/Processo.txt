@@ -1,0 +1,43 @@
+~~~~~~~~EXERCÍCIO 19
+
+   Uma empresa vai conceder um aumento percentual de salário aos seus
+  funcionários dependendo de quanto cada pessoa ganha, conforme tabela
+  ao lado. Fazer um programa para ler o salário de uma pessoa, daí mostrar
+  qual o novo salário dessa pessoa depois do aumento, quanto foi o aumento
+  e qual foi a porcentagem de aumento.
+    Salário atual Aumento
+    Até R$ 999.00 -> 20%
+    Entre R$ 1000.00 e R$ 2999.00 -> 15%
+    Entre R$ 3000.00 e R$ 7999.00 -> 10%
+    Acima de R$ 8000.00 -> 05%
+        Exemplo:
+            Digite o salario da pessoa: 2500.00
+            Novo salário = R$ 2875.00
+            Aumento = R$ 375.00
+            Porcentagem = 15 %
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+    Parece ser um código ao redor de 4 IF statements. Eu lembro ter feito algo 
+   parecido no décimo quinto exercício, então a estrutura dos IFs não deveria
+   ser difícil. 
+
+    O aumento talvez possa ser definido com: novo salário - salário antigo
+
+    Quanto ao aumento e à porcentagem, eu vou ter que pesquisar.
+
+    //Por esta se tratar da única propriedade imutável dentro de cada IF, a
+    porcentagem foi na verdade o primeiro valor a ser adicionado. O próximo
+    passo foi dividir a porcentagem por 100 e multiplicar o resultado pelo 
+    salário atual, o resultado seria o aumento. O novo salário foi uma
+    simples adição de salário + aumento. 
+ 
+    Inicialmente, eu tinha feito cada uma das 4 possibilidades conter o cálculo
+   e inserir o resultado final no input. Mas eu percebi que o código era o mesmo
+   para cada IF, então eu coloquei essa parte do código uma única vez fora dos IFs.
+   Eu tentei fazer o mesmo com o aumento e novoSalario, já que a fórmula era a mesma
+   pra eles também, mas como as operações dependiam da porcentagem fornecida dentro do
+   IF, eu não pude simplificar essa parte do código, o deixando então com 4 operações 
+   idênticas.

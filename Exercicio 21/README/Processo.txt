@@ -1,0 +1,32 @@
+~~~~~~~~EXERCÍCIO 21
+
+   Leia um valor inteiro X. Em seguida mostre os pares de 1 até X, um valor por
+  linha, inclusive o X, se for o caso.
+    Exemplo:
+        Digite o valor de X: 8
+        2
+        4
+        6
+        8
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+  Números pares são essencialmente números múltiplos de 2, então para definí-los
+   eu poderia aplicar um if, e quanto ao número digitado sendo o maior, eu me lembro
+   de fazer um código no módulo 1 semelhante a:
+
+    i++ <= number
+    return
+
+  Quanto à geração procedural até atingir o X e principalmente a estrutura de 1 número
+   por linha, eu teria que pesquisar.
+
+  //A minha pesquisa me levou ao código "/n", que é como um <br> só que dentro do
+  Javascript (e não da html), é com ele que eu pude quebrar as linhas com cada valor.
+
+   Outro erro na minha interpretação foi sobre o IF: como esse código é um looping, eu
+  precisava da estrutura FOR pra funcionar, algo que eu não tinha notado logo de cara.
+  Fora isso, o que eu fiz foi criar uma string pra ocupar o espaço h2 da html com o valor
+  (i) + "/n" (quebrar linha) em looping.

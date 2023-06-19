@@ -1,0 +1,42 @@
+~~~~~~~~EXERCÍCIO 24
+
+   Receber 5 valores numéricos inteiros; Ordenar os valores em ordem
+  crescente; Exibir os valores ordenados..
+    Exemplo:
+        Números recebidos: 3, 9, 2, 4, 6
+        Ordenados: 2, 3, 4, 6, 9
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Pra ordenar 5 valores em ordem crescente, eu primeiro teria que definir
+    qual número é o menor, e pra isso eu poderia usar o que eu fiz em outro
+    exercício que é o Math.min.
+
+    Já sobre definir em ordem crescente, o único jeito que eu consigo pensar
+     é o de repetir o Math.min 5 vezes.
+
+    //Depois de algumas horas de pesquisa eu vi que existia um método
+    chamado sort() e um chamado map().
+    
+   Em toda a honestidade, eu não entendi muito bem como que esses códigos
+    funcionam, mas pelo o que eu cheguei a entender, o nOrdenados (números
+    ordenados) pega os numeros recebidos pelo cliente e os divide com vírgula
+    com o método split(','), então eles deixam de ser arrays e viram números
+    com o map.(Number).
+    
+   Eu não posso clamar entender o motivo, mas o parseFloat que eu normalmente
+    uso pra tornar os arrays em números desta vez não funcionou, o código não
+    leu o nOrdenados como função e não sorteou nenhum número. Então eu precisei
+    aprender sobre o map.
+
+   Outra coisa que eu não entendi foi porque mesmo com o split(','), o código
+    não consegue ordenar os números se eles já não forem digitados com vírgula
+    entre um e si.
+
+    Sobre o sort(), ele funciona da seguinte forma: a primeira coisa a fazer com
+   os 5 números é compará-los uns com os outros em pares (a e b); se a - b resultar
+   em um número negativo, isso quer dizer que o b é maior que o a. Este processo
+   é feito por todos os números até que se identifique quem é o menor e quem é o
+   maior e assim o código vai ordenando os números.

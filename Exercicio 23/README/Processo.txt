@@ -1,0 +1,41 @@
+~~~~~~~~EXERCÍCIO 23
+
+   Leia dois valores inteiros X e Y. A seguir, calcule e mostre a soma dos
+  números ímpares entre eles.
+    Exemplo:
+        Digite dois números:
+        2
+        9
+        SOMA DOS ÍMPARES = 15
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+  3 + 5 + 7 = 15, certo? Então a primeira coisa que eu tenho que fazer é
+   identificar os números ímpares. Pelo meu conhecimento, números ímpares
+   são identificados através de sua incompatibilidade com o 2, então eu 
+   tenho que achar um jeito de ensinar o código a ler apenas números que
+   não são multiplicáveis por 2.
+
+  Este é talvez o jeito mais fácil de resolver, mas como eu não sei executar
+   (tentarei aprender), caso eu não consiga fazer a ideia inicial dar certo, 
+   eu sei que números ímpares sempre acabam em 1, 3, 5, 7 ou 9; e com isso em
+   mente, eu poderia fazer um if com 5 condições, uma para cada número da
+   seguinte forma:
+   
+  if (numeroInicial.slice(-1) == 1, 3, 5, 7 ou 9) 
+
+  //Sobre a soma em si, pelos números somados serem gerados automaticamente,
+    eu tinha a noção de que este seria um bom lugar pra usar o FOR, mas eu não
+    entendi nada da parte matemática do exercício, então eu tive que pesquisar.
+
+  A solução que eu encontrei gira em torno de ler o numeroInicial (i) até o 
+   numeroFinal, e pra cada número desse processo cujo as condições do IF forem
+   atentidas, o soma terá o valor adicionado ao do número ímpar, gerando então
+   a adição.
+
+   E durante esta pesquisa, eu achei um método mais enxuto para a identificação
+  do número ímpar, ele sendo um onde eu divido o numeroInicial por 2 e vejo se
+  o resultado é um número inteiro ou não (até onde eu entendi, o 1 nesse contexto
+  seria uma representação de número quebrado, como 7/2= 3.5 por exemplo).

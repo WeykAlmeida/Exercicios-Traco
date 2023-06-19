@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Weyk | Exercício 18</title>
+    </head>
+
+    <body>
+        <h1>Conversão de medidas de temperatura (Celsius e Fahrenheit)</h1>
+        <main>
+            <label>
+                Você vai digitar a temperatura em qual escala (C/F)?
+                <select id="medida" name="medida">
+                    <option value="C">C</option>
+                    <option value="F">F</option>
+                </select>
+            <br><br><br><br>
+
+            <label id="rootCelsius">
+                Temperatura em Celsius:
+                <input
+                  id="Celsius"
+                  name="Celsius"
+                  type="number"
+                  placeholder="..."/>
+              </label>
+              <br><br>
+        
+            <label id="rootFahrenheit">
+                Temperatura em Fahrenheit:
+                <input
+                    id="Fahrenheit"
+                    name="Fahrenheit"
+                    type="number"
+                    placeholder="..."/>
+            </label>
+            <br><br>
+    
+                <input
+                    type="button"
+                    value="Converter"
+                    onclick="Converter()">
+                <br></br>
+    
+            <h2 id="resultado">
+
+            </h2>
+        </main>
+    </body>
+
+    <script src="index.js">
+        
+    </script>
+</html>

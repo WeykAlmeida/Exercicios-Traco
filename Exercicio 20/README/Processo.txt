@@ -1,0 +1,23 @@
+~~~~~~~~EXERCÍCIO 20
+
+   Escreva um programa que exiba a soma de todos os números
+  compreendidos entre um intervalo dado pelo usuário.
+    Exemplo:
+        Número inicial: 5
+        Número final: 19
+        Resultado: 180
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+    Depois de alguns minutos de pesquisa, eu cheguei à fórmula
+   n/2 * ( primeiro número + último número). "n" seria o Resultado
+   de ( último número - primeiro número ) + 1.
+
+    Dito isto, o código em si seria parecido com o da equação de 2º grau,
+     onde eu precisei primeiro calcular o delta e depois uma outra fórmula
+     (só que desta vez sem of IF/ELSE).
+     Eu acredito que o código seja algo como:
+
+    resultado = n / 2 * ( numeroInicial + numeroFinal );

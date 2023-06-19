@@ -1,0 +1,50 @@
+~~~~~~~~EXERCÍCIO 18
+
+    Deseja-se converter uma medida de temperatura da escala Celsius para
+   Fahrenheit ou vice-versa. Para isso, você deve construir um programa que
+   leia a letra "C" ou "F" indicando em qual escala vai ser informada uma
+   temperatura. Em seguida, o programa deve mostrar a temperatura na
+   outra escala com duas casas decimais. Você deve pesquisar as fórmulas
+   para conversão de Fahrenheit->Celsius e de Celsius->Fahrenheit.
+      Exemplo:
+         Você vai digitar a temperatura em qual escala (C/F)? C
+         Digite a temperatura em Celsius: 28.15
+         Temperatura equivalente em Fahrenheit: 82.67
+         Você vai digitar a temperatura em qual escala (C/F)? F
+         Digite a temperatura em Fahrenheit: 75.00
+         Temperatura equivalente em Celsius: 23.89
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Como eu não tenho muita familiaridade com física, eu vou ter que pesquisar
+    sobre o que define cada uma dessas medidas de temperatura e entender como
+    aplicá-las em Javascript. Depois disso, eu tive a ideia de fazer um <select>
+    antes de mostrar o campo de digitação (input) e mostrar a conversão em <h1>.
+
+   [Completa especulação da minha parte] - talvez um "addEventListener 'click'"
+    consiga executar essa minha ideia de só mostrar o input em que o cliente 
+    deveria digitar. Eu vou tentar adicionar id's aos select e exibir o input
+    com um IF.
+
+    //Inicialmente, a minha ideia era escrever o conteúdo dos inputs de Celsius
+    e Fahrenheit em duas const diferentes e chamá-las com uma função para então
+    executar a conversão de uma medida pra outra, mas eu achei um jeito melhor:
+    "style.display" é uma propriedade que pode "esconder" uma parte do site de uma
+    maneira mais dinâmica e curta do que o meu plano inicial. Outra coisa errada
+    sobre a minha ideia foi o addEventListener click, quando o contexto desse código
+    requere addEventListener "change". Fora isto, algumas horas de pesquisa me
+    ajudaram a realizar o código do jeito que eu queria. A exibição em si ficou um
+    pouco estranha, mas funcional.
+
+   Quanto à conversão em si, eu tive dificuldades por esta se tratar da última etapa
+    de um exercício cujo a lógica constantemente requere a consideração de mais de uma
+    possibilidade (se é Celsius ou Fahrenheit). O método que eu utilizei para tornar a
+    leitura do código o mais simples possível foi o de criar a fórmula dentro de um
+    IF/ELSE baseado na opção selecionada no começo (medida).
+
+
+    Outra coisa que eu notei foi que, até agora, eu fiz todas as html errado... eu
+   estava colocando os <main> fora do <body>, o que é algo errado que eu nunca tinha
+   notado por não ter dado problema.

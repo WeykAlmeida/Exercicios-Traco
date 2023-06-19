@@ -1,0 +1,36 @@
+~~~~~~~~EXERCÍCIO 22
+
+   Ler um número inteiro N, daí mostrar na tela a tabuada de N para 1 a 10,
+  conforme exemplo.
+    Exemplo:
+        Deseja a tabuada para qual valor? 4
+        4 x 1 = 4
+        4 x 2 = 8
+        4 x 3 = 12
+        4 x 4 = 16
+        4 x 5 = 20
+        4 x 6 = 24
+        4 x 7 = 28
+        4 x 8 = 32
+        4 x 9 = 36
+        4 x 10 = 40
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+  Eu acredito que eu precisaria do FOR(?). Somar um número até 10 parece ter
+   a ver com:
+
+   for (let i = numero; i < 10; i++)
+
+  Eu preciso pesquisar como o ato de multiplicação dentro do FOR funciona e
+   sobre como aplicá-lo em looping.
+
+   //Por eu não estar acostumado a usar o FOR, eu fiquei um pouco perdido logo
+   na idealização do código. "let i = numero; i < 10; i++" está errado; a tabuada 
+   seria de 1 à 10, então o i deveria ser 1, logo, "let i = 1; i <= 10; i++" 
+    
+    Dificuldades de lado, o FOR parece ser um código sobre criar condições e estruturas
+    para loopings. Em outras palavras, meio que definir o i e então aplicá-lo em uma
+    fórmula que eu queira gerar proceduralmente (no meu caso sendo numero x i).
