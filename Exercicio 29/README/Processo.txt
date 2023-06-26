@@ -1,0 +1,36 @@
+~~~~~~~~EXERCÍCIO 29
+
+    Pesquise o algoritmo de validação do CNPJ escreva um programa que
+     valide qualquer CNPJ dado;
+      Exemplos:
+         CNPJ: 70.345.111/0001-09
+         Saída: Inválido.
+         CNPJ: 97.544.324/0001-22
+         Saída: Válido.
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   //Eu decidi só comentar depois de ter terminado o exercício. Não
+   apenas porque a primeira coisa que eu tive que fazer já era pesquisar
+   mas também porque mesmo após ter a fórmula e usar o ChatGPT, eu ainda
+   tive dificuldades para entender como transcrever a fórmula para o código.
+
+    Eu não consegui fazer o código sozinho, mas eu pelo menos consigo o ler:
+
+    Conforme o primeiro FOR passa por cada um dos digitos do CNPJ (convertido
+     para número com o parseInt), ele os multiplica de acordo com os números do
+     DV1 e adiciona a soma dos resultados na variável soma.
+    A variável resto é a soma do FOR dividida por 11. Se o resto for menor que 2,
+     isto é, um número cujo a subtração com o 11 não seja o suficiente para trazer
+     o primeiro Digito Verificador para um único digito, o DV1 seria automaticamente
+     0. Caso contrário, o DV1 é o resultado da subtração 11 - resto. Ex:
+
+     Se resto = 9, então DV1 = 11 - 9, que seria 2.
+
+    O DV2 funciona com a mesma lógica, só que com um número a mais.
+
+    A última parte (que eu demorei pra entender) foi comparar não o calcDV1 e calcDV2
+     com o CNPJ, mas sim os números calculados específicos de cada um. Se eles forem
+     iguais, então o CNPJ seria válido.

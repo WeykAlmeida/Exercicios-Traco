@@ -1,0 +1,26 @@
+~~~~~~~~EXERCÍCIO 27
+
+    Fazer um programa para verificar se um número ou palavra é palíndroma;
+   Exibir como saída se o número ou palavra "é palíndroma" ou "não é
+   palíndroma". Um palíndromo é algo que pode ser lido em qualquer
+   sentido. Ex.: 110011, Reger, Osso.
+      Exemplos:
+         Palavra: Reger
+         Saída: É palíndroma.
+         Palavra: Casa
+         Saída: Não é palíndroma.
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Devido à natureza de palavras palíndromas, eu acredito que o necessário
+    para conferir letra por letra seja passar por um FOR e um IF checando
+    se a string possui os mesmos valores quando de trás pra frente. 
+
+   Para fazer isso, eu vou precisar pesquisar como inverter strings.
+
+   //Eu achei o método "reverse()", mas ele sozinho não foi o bastante. A
+   string precisava ser convertida para um array e pra isso eu usei o split().
+   Depois tudo o que eu precisei fazer foi "juntar" as letras novamente e
+   comparar as duas strings com um IF/ELSE.

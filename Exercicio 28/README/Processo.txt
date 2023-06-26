@@ -1,0 +1,18 @@
+~~~~~~~~EXERCÍCIO 28
+
+    Receber 5 valores numéricos e exibir apenas o Menor valor e o Maior valor;
+      Exemplo:
+         Valores: 3, 9, 2, 4, 6
+         Saída: 2 e 9
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Das outras vezes que eu peguei o menor ou o maior resultado de uma sequência,
+    eles foram com inputs diferentes, então o que me passa pela cabeça é usar um 
+    split() e um Math.min && Math.max.
+
+    //Foi exatamente o que eu fiz, mas como eu criei o costume de usar o parseFloat
+    pra converter strings em números, na hora que eu usei o split(), o código não
+    tinha funcionado. Foi só eu resolver isso que deu tudo certo.

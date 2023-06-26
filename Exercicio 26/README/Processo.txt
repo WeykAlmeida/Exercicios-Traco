@@ -1,0 +1,58 @@
+~~~~~~~~EXERCÍCIO 26
+
+    Fazer um programa para receber uma palavra (string); Calcular a
+  quantidade de vogais e a quantidade consoantes da palavra; Exibir os
+  valores calculados.
+      Exemplo:
+         Palavra: Orangotango
+         Vogais: 5
+         Consoantes: 6
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Inicialmente, eu tinha pensado em classificar duas em consts com
+    todas as letras vogais e consoantes do alfabeto, mas como isso
+    parece imprático, eu tentei pensar em outra solução e talvez um
+    IF/ELSE só com as vogais seja o suficiente.
+
+   Ao dar uma olhada na internet por ideias, eu lembrei do método
+    includes(), como eu já tinha usado esse no passado, eu só preciso
+    olhar nos códigos dos módulos 2 e 3 para referências.
+
+   //Nenhum dos códigos que eu tinha feito no passado eram parecidos
+   com esse, eu não consegui resolver esse código por conta própria
+   então eu usei o chatGPT.
+   
+   Antes de explicar o que eu entendi sobre o código gerado pra mim, eu vou explicar
+    o que eu não entendi ou não sabia aplicar:
+
+    -Como converter letras em números ();
+    -Como associar vogais e consoantes à variável Palavra;
+   
+   Por outro lado, eu aprendi sobre o toLowerCase(), um método que transforma toda
+    letra de uma string para letra minúscula, o que eu acredito que seja usado para
+    facilitar a conta de vogais e consoantes.
+
+   Sobre o código em si, dentro da função Contar() existem dois LET, um para vogais
+    e um para consoantes, eles servem não apenas como base para o próximo código
+    como, por começar com 0, também para manter a conta de cada vogal e consoante.
+    
+   O próximo código é meio que o centro da operação, que é o FOR (que eu não tinha
+    pensado em usar):
+
+   Ele abre estabelecendo que o número não pode ser maior que a Palavra, e então
+    um IF/ELSE para separar as vogais das consoantes, não do jeito simples
+    que eu tinha pensado (IF a, e, i, o, u = vogal / else consoante), mas sim
+    através de uma const contendo as letrasVogais para usar como comparação.
+
+   Pelo o que eu entendi, o primeiro IF statement pergunta se alguma das letrasVogais
+    está presente na Palavra inserida, e se estiver, ela adiciona cada uma como vogal.
+
+   Caso contrário, um outro IF perguntando se existe alguma letra de A à Z na Palavra.
+    Se tiver, ela adiciona cada uma como consoante.
+
+    Esse foi pra mim um exercício difícil que eu tive que perguntar várias coisas para
+   a IA (como o "palavra[i]", que é o que é usado para contar cada letra da string
+   individualmente), mas um que me ensinou códigos e lógicas que eu não sabia antes.

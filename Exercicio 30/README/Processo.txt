@@ -1,0 +1,47 @@
+~~~~~~~~EXERCÍCIO 30
+
+    Escreva um programa que receba um valor numérico de até dois
+   algarismos e transcreva esse valor por extenso.
+      Exemplos:
+         Número: 13
+         Saída: Treze.
+
+         Número: 45
+         Saída: Quarenta e Cinco.
+
+         Número: 30
+         Saída: Trinta.
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Números por extenso seguem um padrão fácil de perceber. Talvez
+    essa não seja a solução ideal, mas a primeira coisa que eu pensei foi
+    em uma série de IF statements que lessem o primeiro número dos dois e
+    o complementasse com o segundo número. Exemplo:
+
+    if (numero > 19 && numero[0] == 3) {
+        if (numero[1] == 1) {
+            document.getElementById("saida").value = "Trinta e um."
+        }
+        if (numero[1] == 2) {
+            document.getElementById("saida").value = "Trinta e dois."
+        }
+        if (numero[1] == 3) {
+            document.getElementById("saida").value = "Trinta e três."
+        }
+    }
+
+   Seguindo esta fórmula, eu poderia fazer numero > 19 && numero[0] == 2
+    4, 5 e assim sucessivamente até o 9.
+
+   Mas como cada número abaixo de 20 tem um jeito único de escrever, eu
+    teria que criar um IF único pra eles, o que me faz questionar se este
+    é realmente o método ideal. Eu vou pesquisar só pra ter certeza.
+
+    //Eu achei alguns programas que criavam um método "toWords", mas nenhum
+    em português. Eu eventualmente acabei me deparando com todos os 19
+    números em uma única variável, o que imediatamente me deu a ideia de 
+    ler os números como "var[i]". Como o i sempre começa em 0, eu levei em
+    consideração dois espaços em branco.

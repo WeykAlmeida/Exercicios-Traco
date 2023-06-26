@@ -1,0 +1,44 @@
+~~~~~~~~EXERCÍCIO 25
+
+    Receber valores numéricos para o dia e o mês de nascimento de uma
+   pessoa; Exibir o signo da pessoa de acordo com os seguintes critérios:
+         Áries: de 21 de março a 20 de abril;
+         Touro: de 21 de abril a 20 de maio;
+         Gêmeos: de 21 de maio a 20 de junho;
+         Câncer: de 21 de junho a 22 de julho;
+         Leão: de 23 de julho a 22 de agosto;
+         Virgem: de 23 de agosto a 22 de setembro;
+         Libra: de 23 de setembro a 22 de outubro;
+         Escorpião: de 23 de outubro a 21 de novembro;
+         Sagitário: de 22 de novembro a 21 de dezembro;
+         Capricórnio: de 22 de dezembro a 20 de janeiro;
+         Aquário: de 21 de janeiro a 18 de fevereiro;
+         Peixes: de 19 de fevereiro a 20 de março;
+      Exemplo:
+         Data de Nascimento: 29/03
+         Signo: Áries
+
+
+
+~~~~~~~~INTERPRETAÇÃO
+
+   Eu acredito que, assim como as horas, os meses possam possuir algum tipo
+    de cálculo predeterminado que esse exercício quer que eu pesquise sobre.
+    Dito isto, independente deste ser ou não o caso, o que existe aqui são
+    12 arrays (signos). Eu só consigo imaginar o código funcionando com 12
+    IF statements verificando o período de cada mês e atribuí-lo a um signo.
+
+
+   //Eu tive uma ideia funcional, mas eu não soube colocá-la em prática. Então
+    eu optei pesquisar um método de resolução. E o que eu achei foi algo que eu
+    não sabia que podia ser feito: criar uma const contendo mais de uma variável
+    (dia e mes) com o []; com isso eu pude separar o dia e mês com um split("/").
+    E a última coisa que o dia/mes precisavam pro IF seria virar números, e pra
+    isso eu usei o map(Number).
+
+    Depois o que eu fiz foi criar uma nova função contendo os 12 IF/ELSEs, um pra
+   cada signo de acordo com os meses e dias providenciados. Não fui eu que 
+   idealizei a estrutura de nenhum desses IF/ELSEs, mas o conceito é usar o mês
+   como base pro IF e definir o ELSE a partir dos dias (ex: se o mês for 5, então
+   os signos podem ser touro ou gêmeos dependendo se o dia for menor ou maior que
+   21). 
